@@ -1,0 +1,41 @@
+CREATE TABLE jogos(  
+    id_jogo int NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+    titulo VARCHAR(255) not NULL,
+    valor DECIMAL(10, 2) NOT NULL,
+    plataforma VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;
+
+
+CREATE TABLE usuarios(  
+    id_usuario int NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+    nome VARCHAR(255) not NULL,
+    email VARCHAR(255) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
+    idade int NOT NULL,
+    cpf VARCHAR(11) NOT NULL
+) ENGINE=InnoDB;
+
+
+CREATE TABLE cart(  
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_usuario int NOT NULL,
+    id_jogo INT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
+    FOREIGN KEY (id_jogo) REFERENCES jogos(id_jogo)
+) ENGINE=InnoDB;
+
+
+INSERT INTO `jogos`(`titulo`,`valor`,`plataforma`) VALUES
+('elden ring',0,'PC'),
+('GTA',75.00,'PC e console'),
+('god of war',289.92,'PS'),
+('the last of us',165.55,'PS'),
+('spider-man',249.50,'PS'),
+('minecraft',75.50,'PC'),
+('fortnite',0,'PC'),
+('counter strike',0,'PC'),
+('rd 2',59.90,'PC e console'),
+('rocket league',0,'PC e console'),
+('palworld',0,'PC'),
+('EA FC 24',0,'PC e console');
+
