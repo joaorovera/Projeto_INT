@@ -9,7 +9,6 @@
 
 body {
     font-family: Inter, sans-serif;
-    font-weight: 800;
     margin: 0;
     padding: 0;
     color: #545454
@@ -21,7 +20,7 @@ body {
     align-content: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(imagens/KHJogos.png);
+    background-image: url(imagens/recup.png);
     background-size: cover;
 }
 
@@ -31,29 +30,10 @@ body {
     align-content: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(imagens/recup.png);
+    background-image: url(imagens/KHJogos.png);
     background-size: cover;
 }
-
-.frases {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-}
-
-.fraseLogin {
-    font-family: 'ND', sans-serif;
-    display: flex;
-    color: #38B6FF;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-}
-
+    
 .formLogin {
     display: flex;
     flex-direction: column;
@@ -74,7 +54,7 @@ body {
     padding: 0;
     margin: 0;
     font-weight: 500;
-    font-size: 2.3em;
+    font-size: 1.8em;
 }
 
 .formLogin p {
@@ -108,13 +88,32 @@ body {
 .formLogin a {
     display: inline-block;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 14px;
     color: #545454;
     transition: all linear 160ms;
 }
 
 .formLogin a:hover {
     color: #545454;
+}
+
+.frases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.fraseLogin {
+    font-family: 'ND', sans-serif;
+    display: flex;
+    color: #38B6FF;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
 }
 
 .btn {
@@ -129,12 +128,11 @@ body {
 
 }
 
-.btn:hover {
+.btn:hover { 
     transform: scale(1.05);
     background-color: #38B6FF;
 
 }
-
 
 #butinho{
     margin:auto;
@@ -142,6 +140,7 @@ body {
     color:#38B6FF;
     font-weight: bold;
 }
+
 
 #butinho:hover {
     transform: scale(1.1);
