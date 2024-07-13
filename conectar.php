@@ -2,7 +2,12 @@
 
 $usuario = 'root';
 $senha = '';
-$database = 'KGJogos';
+$database = 'kgjogos';
 $host = 'localhost';
 
-$conexao = mysqli_connect($host, $usuario, $senha, $database);
+$conn = new mysqli($host, $usuario, $senha, $database);
+
+if (!$conn) {
+    die("Falha na conexão: " . mysqli_connect_error());
+}
+?>
